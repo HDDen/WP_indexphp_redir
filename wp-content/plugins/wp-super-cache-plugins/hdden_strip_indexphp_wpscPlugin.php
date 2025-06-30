@@ -1,10 +1,12 @@
 <?php
-/*
-Plugin Name: WP Super Cache - index.php redirect fix
-Description: Убираем index.php из url. Оформлено в виде плагина для WP Super Cache, т.к. без поздней инициализации MU-вариант не работает. MU нужен из-за срабатывания htaccess-правила на rest-запросы
-Author: HDDen
-Version: 1.2
-*/
+/**
+ * Plugin Name: WP Super Cache - index.php redirect fix
+ * Version:     1.2.1
+ * Plugin URI:  https://github.com/HDDen/WP_indexphp_redir
+ * Description: Убираем index.php из url. Оформлено в виде плагина для WP Super Cache, т.к. без поздней инициализации MU-вариант не работает. MU нужен из-за срабатывания htaccess-правила на rest-запросы
+ * Author:      HDDen
+ * Author URI:  https://github.com/HDDen
+ */
 
 if (!function_exists('hdden_strip_indexphp')){
     function hdden_strip_indexphp(){

@@ -1,12 +1,12 @@
 <?php
-/*
-Plugin Name: Redirect Must-Use Plugin
-Description: Убираем index.php из url. MU из-за срабатывания htaccess-правила на rest-запросы
-Author: HDDen
-Author URI: https://github.com/HDDen
-Update URI: https://github.com/HDDen/WP_indexphp_redir
-Version: 1.2
-*/
+/**
+ * Plugin Name: Redirect Must-Use Plugin
+ * Version:     1.2.1
+ * Plugin URI:  https://github.com/HDDen/WP_indexphp_redir
+ * Description: Убираем index.php из url. MU из-за срабатывания htaccess-правила на rest-запросы
+ * Author:      HDDen
+ * Author URI:  https://github.com/HDDen
+ */
 
 add_action( 'init', function(){
     $url = $_SERVER['REQUEST_URI'];
